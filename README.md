@@ -2,8 +2,10 @@
 ## Devlogs
 ### W1
 Week 1 in-class activity
+
 Prompt:
 In the Hierarchy, move the Camera off of the Cat GameObject, so that it’s no longer a child of the Cat. What happens when you run the game now, and why?
+
 Devlog:
 Based on my experiment, the camera stays still on the NewStart postition, and the cat goes away from it as players use wasd to control the movement of the cat. 
 
