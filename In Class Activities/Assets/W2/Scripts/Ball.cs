@@ -77,6 +77,7 @@ public class Ball : MonoBehaviour
 
         // STEP 6 -------------------------------------------------------------
         // Below this comment, write a line of code to MULTIPLY 'b' by 1.2.
+        b *= 1.2f;
 
         // STEP 6 -------------------------------------------------------------
 
@@ -84,6 +85,10 @@ public class Ball : MonoBehaviour
         // Below this comment, write an IF STATEMENT:
         // IF the value of 'b' is GREATER THAN **OR** EQUAL TO 1.0,
         //      set 'b' to 0.1. 
+        if (b > 1.0f || b == 1.0f)
+        {
+            b = 0.1f;
+        }
 
         // STEP 7 -------------------------------------------------------------
 
@@ -103,9 +108,11 @@ public class Ball : MonoBehaviour
         // Below this comment, write 2 lines of code to ADD the values of 
         //      r, g, and b, and then divide the result by 3.
         // Store the result in a variable named 'brightness'.
+        float sumColor = r + g + b;
+        float brightness = sumColor / 3f;
 
         // STEP 8 -------------------------------------------------------------
-        float brightness = (r + g + b) / 3f;
+
 
         // STEP 9 -------------------------------------------------------------
         // Uncomment the below line to make the 'brightness' text change in your game.
