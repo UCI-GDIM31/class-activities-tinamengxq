@@ -85,7 +85,7 @@ public class Ball : MonoBehaviour
         // Below this comment, write an IF STATEMENT:
         // IF the value of 'b' is GREATER THAN **OR** EQUAL TO 1.0,
         //      set 'b' to 0.1. 
-        if (b > 1.0f || b == 1.0f)
+        if (b >= 1.0f)
         {
             b = 0.1f;
         }
