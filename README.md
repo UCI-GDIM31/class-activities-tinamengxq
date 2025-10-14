@@ -40,6 +40,13 @@ Input: float x (touch time); float y (leave time)
 Output type: boolean (whetherHit)
 
 
+MonoBehavior coding activity:
+1.Class is a family recipe for how to make and present a dish that has been passed down through different generations. Components are the printed version of the recipe in a cookbook. Method is the cooking steps for this dish. Member variables are the ingredients of this dish.
+
+
+2.The balls bounce a lot of times as the game progresses. As the speed of the balls get quicker, the multiplier will increase by 1.0f to 1.5f. As the ball bounces too many times, the color becomes brighter and brighter.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
