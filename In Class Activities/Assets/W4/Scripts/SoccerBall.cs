@@ -7,6 +7,18 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
+    public int points = 0;
+    public float timeTrack = 0;
+
+    void Update()
+    {
+        timeTrack += Time.deltaTime;
+        _timeText.text = $"Time since last goal: {timeTrack}";
+    }
+
+    
+
+
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -20,23 +32,30 @@ public class SoccerBall : MonoBehaviour
     // You'll also need to have all of your colliders set up properly in the Scene ;)
     //
     // Also, uncomment and FIX the Debug.Log line.
+    
 
-    //private ?? ??
-    //{
+    private void OnTriggerEnter(Collider other)
+    {
+
         // finish STEP 1 by uncommenting and fixing the below line!
-        //Debug.Log(SoccerBall detected a collision with a trigger collider!);
+
 
         // STEP 2 -------------------------------------------------------------
         // Write an IF STATEMENT to check if the game object we collided with
         //      has the tag "Goal".
         // Refer to the slides for an example of how to check this :)
-        //
+        string tag = other.gameObject.tag;
+
+        if (tag == "Goal")
+        {
+            MadeGoal();
+        }
         // Then, move your Debug.Log() statement so that it's only called if
         //      the colliding object has the "Goal" tag.
 
 
         // STEP 2 -------------------------------------------------------------
-    //}
+    }
 
     // STEP 1 -----------------------------------------------------------------
 
@@ -46,6 +65,15 @@ public class SoccerBall : MonoBehaviour
     //      SoccerBall collided with an object tagged "Goal".
     // MadeGoal RETURNS NOTHING, and has NO INPUT.
     // 
+    public void MadeGoal()
+    {
+        Debug.Log("GOAL!");
+        _goalVFX.Play();
+        points += 1;
+        _pointsText.text = "Points: " + points;
+        timeTrack = 0;
+        
+    }
     // Once you've created MadeGoal,
     //      move your Debug.Log() statement into MadeGoal, and
     //      call MadeGoal from inside your if statement in OnTriggerEnter.
@@ -94,5 +122,6 @@ public class SoccerBall : MonoBehaviour
     //              and update _timeText with the new time.
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
+
     // STEP 6 -----------------------------------------------------------------
 }
