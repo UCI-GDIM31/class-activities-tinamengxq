@@ -46,6 +46,15 @@ MonoBehavior coding activity:
 
 2.The balls bounce a lot of times as the game progresses. As the speed of the balls get quicker, the multiplier will increase by 1.0f to 1.5f. As the ball bounces too many times, the color becomes brighter and brighter.
 
+### W4
+Describing code activity: table #5
+line 5: It creates a private member variable called _movespeed under CatW4 class. The type of the variable is float. And it gives the variable a value 1.0f. Also, the line enables the variable to be shown in the inspector and edited but not in the code.
+
+line 22: It creates a float variable called translation and give it a value. The value is obtained through calculation. At first, method GetAxis under Input class is called given the parameter "Vertical". The method outputs a float variable, and this variable is multiplied by the float variable _movespeed and Time.deltaTime. For Time.deltaTime, deltaTime method is called under Time class to present the time interval between recent frames.
+
+line 25: 
+Translate method is called under transform class. The method parameters are 0, 0, translation. 
+
 
 ## Open-Source Assets
 ### W1
