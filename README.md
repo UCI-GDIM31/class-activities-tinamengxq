@@ -56,6 +56,15 @@ line 25:
 Translate method is called under transform class. The method parameters are 0, 0, translation. 
 
 
+What solution did you come up with for the collider activity, and why? Specifically- which objects did you add Rigidbodies to, and which object(s) did you check Is Trigger on?
+Rigidbody: SoccerBall, Cat
+Is Trigger: Goal
+Cat has to kick SoccerBall in the game so they cannot be invisible to each others. They should include Rigidbody component but not Is Trigger. And for Goal, it stays still and don't subjectively collide with others, rigidbody is not required. But to test whether the cat goals, Is Trigger should be checked to know whether the collision happens.
+
+
+IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
+My game worked well. But I have some problems in the collider.gameObject.tag step. I didn't recognize that collider is a type of variable so I just put collider.Goal.tag here and there is error. Then I found out that the place of collider should write the name of the variable, I change other there and it worked well. 
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
