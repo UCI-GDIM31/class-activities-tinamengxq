@@ -73,7 +73,22 @@ BallW3 ball = collision.gameObject.GetComponent<BallW3>();
 What is stored in ball?
 
 Our answer: the GetComponent code first checks whether there is a BallW3 component under gameobject. If there is a BallW3 component there, the variable ball will store a reference to this component, just like the pointer in C++. (? We are not sure if this is appropriate) And if there is no component BallW3 there, the variable ball will store null.
-It is like 
+
+
+DeerW5:
+1. add component DeerW5 to the inspector of gameObject Deer
+2. define float variables for deer's speed that can be shown and changed in unity
+3. an Update() method, deer will move every frame after the game starts
+4. use transform.translate to change direction
+5. use GetComponent<> to find NavMeshAgent
+6. use Collision() method to make Deer stop when it touch the target object
+7. add collision and rigidbody to mushroom-red
+
+Renew:(written after coding)
+1. set target and drag red mushroom to target, member variable target with type Transform
+2. use Update() and GetCOmponent<> to locate and use NavMeshAgent component
+3. use unity method setdestination() to set target as the destination
+
 
 
 ## Open-Source Assets
