@@ -65,6 +65,17 @@ Cat has to kick SoccerBall in the game so they cannot be invisible to each other
 IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
 My game worked well. But I have some problems in the collider.gameObject.tag step. I didn't recognize that collider is a type of variable so I just put collider.Goal.tag here and there is error. Then I found out that the place of collider should write the name of the variable, I change other there and it worked well. 
 
+### W5
+My question: So for the code in the pre-learnig ppt, there is a line of code. 
+
+BallW3 ball = collision.gameObject.GetComponent<BallW3>();
+
+What is stored in ball?
+
+Our answer: the GetComponent code first checks whether there is a BallW3 component under gameobject. If there is a BallW3 component there, the variable ball will store a reference to this component, just like the pointer in C++. (? We are not sure if this is appropriate) And if there is no component BallW3 there, the variable ball will store null.
+It is like 
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
