@@ -90,6 +90,13 @@ Renew:(written after coding)
 3. use unity method setdestination() to set target as the destination
 
 
+### W6
+1. Activity 1
+We actually let everybody worked on all categories as some are finding and some are copying.
+(https://docs.google.com/document/d/1exNqQE_zGuOoztND9FT3ldDwkXjJ6m8a8oRDWERaMyg/edit?usp=sharing)
+
+2. Activity 2
+we need float variable _speed and a transform variable target (?). And we need an update() method to let bats move. And we need to create to methods startChasing() to enable the gameObject and stopChasing() to disable the gameObject. 
 
 ## Open-Source Assets
 ### W1
