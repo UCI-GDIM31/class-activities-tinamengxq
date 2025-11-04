@@ -42,8 +42,11 @@ public class BatManager : MonoBehaviour
         //      the bat at _bats[1] has a timer at _newTextTimers[1],
         //      and so on.
         _newTextTimers = new float[_bats.Length];
+        
         // STEP 6 -------------------------------------------------------------
     }
+
+
 
     // ------------------------------------------------------------------------
     private void Update()
