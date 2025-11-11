@@ -98,6 +98,12 @@ We actually let everybody worked on all categories as some are finding and some 
 2. Activity 2
 we need float variable _speed and a transform variable target (?). And we need an update() method to let bats move. And we need to create to methods startChasing() to enable the gameObject and stopChasing() to disable the gameObject. 
 
+
+### W7
+1. 
+2. PLAN: When the Muskrat is on the ground, its movement and rotation follow the world coordinate system， where “up” always means world up. However, once the Muskrat jumps onto a bubble, its coordinate system changes. The local “up” direction becomes the direction that points perpendicularly outward from the surface of the bubble, rather than the world’s vertical axis. In other words, the Muskrat’s local orientation now depends on the bubble’s surface normal, not the world’s flat ground. This allows the Muskrat to walk correctly around the curved bubble surface, maintaining its balance and direction relative to the bubble, rather than the world.
+3. Step 2 problem: It directly changes the position of the rat but not transform the position of the rat. If we just change the rat, we cannot fluently move the rat.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
