@@ -100,7 +100,8 @@ we need float variable _speed and a transform variable target (?). And we need a
 
 
 ### W7
-1. 
+1. https://docs.google.com/document/d/1TsVke4FYWiPQJM1o9TWKmZdGuEjed6uXTYwZxrXfC3I/edit?usp=sharing
+I worked to come up the whole picture and gameObjects along with their movements.
 2. PLAN: When the Muskrat is on the ground, its movement and rotation follow the world coordinate system， where “up” always means world up. However, once the Muskrat jumps onto a bubble, its coordinate system changes. The local “up” direction becomes the direction that points perpendicularly outward from the surface of the bubble, rather than the world’s vertical axis. In other words, the Muskrat’s local orientation now depends on the bubble’s surface normal, not the world’s flat ground. This allows the Muskrat to walk correctly around the curved bubble surface, maintaining its balance and direction relative to the bubble, rather than the world.
 3. Step 2 problem: It directly changes the position of the rat but not transform the position of the rat. If we just change the rat, we cannot fluently move the rat.
 
